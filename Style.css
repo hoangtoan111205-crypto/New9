@@ -1,0 +1,165 @@
+
+/* Cài đặt chung */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #eeeeee;
+    color: #333333;
+}
+
+.container {
+    width: 1000px;
+    max-width: 95%;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* Thanh điều hướng */
+nav {
+    background-color: #3498db;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #21618c;
+}
+
+/* Bố cục nội dung */
+.main-layout {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Section chứa nội dung chính */
+section {
+    width: 70%;
+    min-width: 0;
+}
+
+section h2,
+aside h2 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+/* Article */
+article {
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+article h3 {
+    color: #2980b9;
+    margin-top: 0;
+}
+
+article a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* Aside */
+aside {
+    flex: 1;
+    min-width: 0;
+    background-color: #f4f6f7;
+    padding: 15px;
+}
+
+.sidebar-box {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.sidebar-box h3 {
+    margin-top: 0;
+    color: #2980b9;
+}
+
+.sidebar-box ul {
+    padding-left: 20px;
+}
+
+.sidebar-box a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.sidebar-box a:hover {
+    color: #2980b9;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Hiển thị trên điện thoại */
+@media (max-width: 650px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .main-layout {
+        flex-direction: column;
+    }
+
+    section,
+    aside {
+        width: 100%;
+    }
+
+    nav a {
+        padding: 10px 12px;
+    }
+}
